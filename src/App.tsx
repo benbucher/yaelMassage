@@ -7,9 +7,10 @@ import {
   Menu,
   X,
 } from 'lucide-react';
+import heroImage from './pictures/hero-door.jpg';
+import yael01 from './pictures/yael01.jpg';
 
-const HERO_IMAGE =
-  'https://images.pexels.com/photos/157356/pexels-photo-157356.jpeg?auto=compress&cs=tinysrgb&w=1600';
+const HERO_IMAGE = heroImage;
 
 const NAV = [
   { id: 'massage', label: 'Massage' },
@@ -71,7 +72,7 @@ function Header({ active }: { active: string }) {
                 scrolled ? 'text-ink' : 'text-white'
               }`}
             >
-              Yaël Massage
+              Yaël Marquet Massage
             </span>
           </button>
 
@@ -146,11 +147,10 @@ function Hero() {
 
       <div className="relative z-10 text-center px-6 max-w-2xl">
         <h1 className="font-serif text-white text-4xl sm:text-6xl leading-[1.1] tracking-tight opacity-0 animate-[fadeUp_0.9s_0.25s_forwards] drop-shadow-[0_2px_20px_rgba(0,0,0,0.25)]">
-          Yaël Massage
+          Yaël Marquet
         </h1>
         <p className="mt-5 text-white/90 text-base sm:text-lg font-light max-w-md mx-auto leading-relaxed opacity-0 animate-[fadeUp_0.9s_0.4s_forwards] drop-shadow-[0_1px_12px_rgba(0,0,0,0.3)]">
-          Le passage ayurvédique, un soin profond et chaleureux à l'écoute du
-          corps et du souffle.
+          Praticien Massage Ayurvédique
         </p>
       </div>
 
@@ -185,13 +185,23 @@ function MassageSection() {
   return (
     <SectionShell id="massage" tone="cream">
       <h2 className="font-serif text-3xl sm:text-4xl text-ink leading-[1.15] max-w-2xl">
-        Le passage ayurvédique
+        Le massage ayurvédique
       </h2>
       <p className="mt-6 text-ink-soft text-base sm:text-lg leading-relaxed max-w-2xl">
-        Le passage ayurvédique est un massage complet du corps, à l'huile chaude,
-        qui s'inspire des principes de l'Ayurveda. Il vise à relâcher les
-        tensions accumulées, à relancer la circulation et à offrir un véritable
-        temps de pause, loin du rythme du quotidien.
+        L'Ayurveda.
+        <br />
+        C'est la médecine traditionnelle de l'Inde, une science de la vie qui invite à cultiver l'harmonie entre l'être humain, son corps et le monde qui l'entoure. 
+        Issu d'une tradition ancienne transmise au fil des générations, elle considère la santé comme une harmonie subtile entre le corps, le souffle, le mental, les sens et la conscience.
+        À travers l'alimentation, les plantes médicinales, les massages, le yoga, la respiration, la méditation et l'observation des rythmes de la nature, l'Ayurveda accompagne chacun dans la compréhension de sa constitution et de son propre chemin vers l'équilibre.
+        C'est une invitation à vivre plus consciemment, en accord avec notre nature profonde et les lois du vivant. 
+      </p>
+      <p className="mt-6 text-ink-soft text-base sm:text-lg leading-relaxed max-w-2xl">
+        Le massage ayurvédique.
+        <br />
+        Dans la tradition ayurvédique, le massage est un soin ancestral destiné à préserver la santé, soutenir la vitalité et accompagner les forces naturelles d'équilibre de l'organisme.
+        Réalisé avec des huiles végétales et des gestes précis, il favorise une détente profonde, nourrit les tissus, apaise le système nerveux et soutient les capacités naturelles du corps.
+        Chaque massage est une rencontre unique, adaptée à la constitution, au moment de vie et aux besoins de chacun, dans le respect des principes de l'Ayurveda.
+        Recevoir un massage ayurvédique, c'est s'offrir un temps de soin et de présence, où les tensions se relâchent, où le souffle retrouve son rythme et où le corps peut renouer avec sa vitalité.
       </p>
 
       <div className="mt-10 rounded-2xl overflow-hidden">
@@ -208,42 +218,42 @@ function MassageSection() {
 function SoinsSection() {
   const cabinet = [
     {
-      name: 'Passage découverte',
+      name: 'Massage découverte',
       duration: '30 minutes',
       price: '40 €',
       desc: 'Une première approche ciblée sur une zone de tension.',
       featured: false,
     },
     {
-      name: 'Passage dos & tête',
+      name: 'Massage dos & tête',
       duration: '45 minutes',
       price: '55 €',
       desc: 'Un soin ciblé sur le dos, les épaules et le cuir chevelu.',
       featured: false,
     },
     {
-      name: 'Passage ayurvédique',
+      name: 'Massage ayurvédique',
       duration: '60 minutes',
       price: '70 €',
       desc: 'Le soin complet, de la tête aux pieds.',
       featured: false,
     },
     {
-      name: 'Passage approfondi',
+      name: 'Massage approfondi',
       duration: '90 minutes',
       price: '95 €',
-      desc: 'Le passage intégral avec un temps prolongé sur les zones de tension.',
+      desc: 'Le massage intégral avec un temps prolongé sur les zones de tension.',
       featured: true,
     },
     {
-      name: 'Passage énergétique',
+      name: 'Massage énergétique',
       duration: '60 minutes',
       price: '75 €',
       desc: 'Axé sur les points marmas pour rééquilibrer l\'énergie vitale.',
       featured: false,
     },
     {
-      name: 'Passage détente absolue',
+      name: 'Massage détente absolue',
       duration: '120 minutes',
       price: '120 €',
       desc: 'Le soin le plus complet, un véritable voyage sensoriel.',
@@ -252,7 +262,7 @@ function SoinsSection() {
   ];
 
   const domicile = {
-    name: 'Passage à domicile',
+    name: 'Massage à domicile',
     duration: '75 minutes',
     price: '110 €',
     desc: 'Le soin complet ayurvédique, pratiqué chez vous, dans votre cocon. Paris et proche banlieue, déplacement inclus.',
@@ -261,7 +271,7 @@ function SoinsSection() {
   return (
     <SectionShell id="soins" tone="sky">
       <h2 className="font-serif text-3xl sm:text-4xl text-ink leading-[1.15]">
-        Soins & tarifs
+        Soins
       </h2>
       <p className="mt-6 text-ink-soft text-base leading-relaxed max-w-2xl">
         Six formules au cabinet selon le temps dont vous disposez et l'intention
@@ -408,7 +418,7 @@ function AProposSection() {
               dont ce soin relie le corps et l'esprit, sans jamais les séparer.
             </p>
             <p>
-              Mon approche est simple et à l'écoute. Chaque passage s'adapte à
+              Mon approche est simple et à l'écoute. Chaque massage s'adapte à
               la personne reçue, à son état du jour, à ce qui a besoin d'être
               relâché. Je travaille dans un petit cabinet paisible, à l'abri du
               bruit, pensé pour qu'on puisse véritablement se déposer.
@@ -424,14 +434,11 @@ function AProposSection() {
         <div className="md:col-span-2">
           <div className="rounded-2xl overflow-hidden">
             <img
-              src="https://images.pexels.com/photos/3997991/pexels-photo-3997991.jpeg?auto=compress&cs=tinysrgb&w=900"
-              alt="Yaël, praticienne en massage ayurvédique"
+              src={yael01}
+              alt="Yaël Marquet, praticien en massage ayurvédique"
               className="w-full h-72 md:h-80 object-cover"
             />
           </div>
-          <p className="mt-4 text-center text-ink-soft/70 text-sm italic font-light">
-            « Prendre soin de soi, c'est prendre soin de la vie. »
-          </p>
         </div>
       </div>
     </SectionShell>
@@ -443,7 +450,7 @@ function Footer() {
     <footer className="bg-ink py-12">
       <div className="max-w-4xl mx-auto px-5 sm:px-8">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6 text-white/70">
-          <span className="font-serif text-base text-white">Yaël Massage</span>
+          <span className="font-serif text-base text-white">Yaël Marquet Massage</span>
           <nav className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm">
             {NAV.map((item) => (
               <button
@@ -459,7 +466,7 @@ function Footer() {
           </nav>
         </div>
         <div className="mt-8 pt-6 border-t border-white/10 text-center text-xs text-white/40">
-          © {new Date().getFullYear()} Yaël Massage — Massage ayurvédique traditionnel
+          © {new Date().getFullYear()} Yaël Marquet Massage
         </div>
       </div>
     </footer>
