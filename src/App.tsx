@@ -81,7 +81,7 @@ function Header({ active }: { active: string }) {
               <button
                 key={item.id}
                 onClick={() => go(item.id)}
-                className={`relative text-sm transition-colors py-1 ${
+                className={`relative text-sm uppercase tracking-[0.08em] transition-colors py-1 ${
                   scrolled
                     ? 'text-ink-soft/80 hover:text-ink'
                     : 'text-white/80 hover:text-white'
@@ -111,7 +111,7 @@ function Header({ active }: { active: string }) {
 
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 bg-cream/95 backdrop-blur-md ${
-          open ? 'max-h-72 border-t border-sky-100' : 'max-h-0'
+          open ? 'max-h-72 border-t border-sage-100' : 'max-h-0'
         }`}
       >
         <nav className="px-5 py-3 flex flex-col">
@@ -119,8 +119,8 @@ function Header({ active }: { active: string }) {
             <button
               key={item.id}
               onClick={() => go(item.id)}
-              className={`text-left px-4 py-3 text-sm transition-colors border-b border-sky-50 last:border-0 ${
-                active === item.id ? 'text-sky-600' : 'text-ink-soft'
+              className={`text-left px-4 py-3 text-sm uppercase tracking-[0.08em] transition-colors border-b border-sage-50 last:border-0 ${
+                active === item.id ? 'text-sage-600' : 'text-ink-soft'
               }`}
             >
               {item.label}
@@ -141,15 +141,15 @@ function Hero() {
           alt="Porte en bois sculpté, teinte bleue délavée"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-sky-200/30 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-b from-sky-100/20 via-transparent to-cream/60" />
+        <div className="absolute inset-0 bg-sage-200/30 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-b from-sage-100/20 via-transparent to-cream/60" />
       </div>
 
-      <div className="relative z-10 text-center px-6 max-w-2xl">
-        <h1 className="font-serif text-white text-4xl sm:text-6xl leading-[1.1] tracking-tight opacity-0 animate-[fadeUp_0.9s_0.25s_forwards] drop-shadow-[0_2px_20px_rgba(0,0,0,0.25)]">
+      <div className="relative z-10 text-center px-6 max-w-3xl">
+        <h1 className="font-serif font-medium text-white text-5xl sm:text-6xl leading-[1.1] tracking-wide opacity-0 animate-[fadeUp_0.9s_0.25s_forwards] drop-shadow-[0_2px_20px_rgba(0,0,0,0.25)]">
           Yaël Marquet
         </h1>
-        <p className="mt-5 text-white/90 text-base sm:text-lg font-light max-w-md mx-auto leading-relaxed opacity-0 animate-[fadeUp_0.9s_0.4s_forwards] drop-shadow-[0_1px_12px_rgba(0,0,0,0.3)]">
+        <p className="mt-5 text-white/90 text-base uppercase sm:text-lg font-light tracking-widest max-w-xl mx-auto leading-relaxed opacity-0 animate-[fadeUp_0.9s_0.4s_forwards] drop-shadow-[0_1px_12px_rgba(0,0,0,0.3)]">
           Praticien Massage Ayurvédique
         </p>
       </div>
@@ -170,7 +170,7 @@ function SectionShell({
 }) {
   const bg =
     tone === 'sky'
-      ? 'bg-sky-50/60'
+      ? 'bg-sage-50/60'
       : tone === 'sage'
         ? 'bg-sage-50/60'
         : 'bg-cream';
@@ -184,7 +184,7 @@ function SectionShell({
 function MassageSection() {
   return (
     <SectionShell id="massage" tone="cream">
-      <h2 className="font-serif text-3xl sm:text-4xl text-ink leading-[1.15] max-w-2xl">
+      <h2 className="font-serif text-primary text-3xl sm:text-4xl text-ink leading-[1.15] max-w-2xl">
         Le massage ayurvédique
       </h2>
       <p className="mt-6 text-ink-soft text-base sm:text-lg leading-relaxed max-w-2xl">
@@ -270,7 +270,7 @@ function SoinsSection() {
 
   return (
     <SectionShell id="soins" tone="sky">
-      <h2 className="font-serif text-3xl sm:text-4xl text-ink leading-[1.15]">
+      <h2 className="font-serif text-primary text-3xl sm:text-4xl text-ink leading-[1.15]">
         Soins
       </h2>
       <p className="mt-6 text-ink-soft text-base leading-relaxed max-w-2xl">
@@ -279,7 +279,7 @@ function SoinsSection() {
       </p>
 
       <div className="mt-12">
-        <h3 className="font-serif text-2xl text-ink w-full pb-3 border-b border-sky-200">
+        <h3 className="font-serif text-2xl text-ink w-full pb-3 border-b border-sage-200">
           À mon cabinet
         </h3>
       </div>
@@ -290,16 +290,16 @@ function SoinsSection() {
             key={t.name}
             className={`relative rounded-2xl p-6 border transition-all duration-300 ${
               t.featured
-                ? 'bg-white border-sky-200'
-                : 'bg-white/70 border-sky-100/70'
+                ? 'bg-white border-sage-200'
+                : 'bg-white/70 border-sage-100/70'
             }`}
           >
             {t.featured && (
-              <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-sky-400 text-white text-[11px] font-medium tracking-wide">
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-sage-400 text-white text-[11px] font-medium tracking-wide">
                 Le plus choisi
               </span>
             )}
-            <p className="text-xs uppercase tracking-wider text-sky-400 font-medium">
+            <p className="text-xs uppercase tracking-wider text-sage-400 font-medium">
               {t.duration}
             </p>
             <h4 className="mt-2 font-serif text-lg text-ink leading-snug">
@@ -308,7 +308,7 @@ function SoinsSection() {
             <p className="mt-2 text-ink-soft text-sm leading-relaxed min-h-[3.5rem]">
               {t.desc}
             </p>
-            <div className="mt-4 pt-4 border-t border-sky-100 flex items-baseline gap-1">
+            <div className="mt-4 pt-4 border-t border-sage-100 flex items-baseline gap-1">
               <span className="font-serif text-3xl text-ink">{t.price}</span>
             </div>
           </div>
@@ -316,14 +316,14 @@ function SoinsSection() {
       </div>
 
       <div className="mt-12">
-        <h3 className="font-serif text-2xl text-ink w-full pb-3 border-b border-sky-200">
+        <h3 className="font-serif text-2xl text-ink w-full pb-3 border-b border-sage-200">
           À domicile
         </h3>
       </div>
 
       <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <div className="relative rounded-2xl p-6 border bg-white/70 border-sky-100/70">
-          <p className="text-xs uppercase tracking-wider text-sky-400 font-medium">
+        <div className="relative rounded-2xl p-6 border bg-white/70 border-sage-100/70">
+          <p className="text-xs uppercase tracking-wider text-sage-400 font-medium">
             {domicile.duration}
           </p>
           <h4 className="mt-2 font-serif text-lg text-ink leading-snug">
@@ -332,7 +332,7 @@ function SoinsSection() {
           <p className="mt-2 text-ink-soft text-sm leading-relaxed">
             {domicile.desc}
           </p>
-          <div className="mt-4 pt-4 border-t border-sky-100 flex items-baseline gap-1">
+          <div className="mt-4 pt-4 border-t border-sage-100 flex items-baseline gap-1">
             <span className="font-serif text-3xl text-ink">{domicile.price}</span>
           </div>
         </div>
@@ -344,7 +344,7 @@ function SoinsSection() {
 function ReservationsSection() {
   return (
     <SectionShell id="reservations" tone="cream">
-      <h2 className="font-serif text-3xl sm:text-4xl text-ink leading-[1.15]">
+      <h2 className="font-serif text-primary text-3xl sm:text-4xl text-ink leading-[1.15]">
         Réservations
       </h2>
       <p className="mt-6 text-ink-soft text-base leading-relaxed max-w-2xl">
@@ -352,7 +352,7 @@ function ReservationsSection() {
         Je recommande de prévoir une semaine à l'avance.
       </p>
 
-      <div className="mt-10 grid sm:grid-cols-2 gap-px bg-sky-100 rounded-2xl overflow-hidden border border-sky-100">
+      <div className="mt-10 grid sm:grid-cols-2 gap-px bg-sage-100 rounded-2xl overflow-hidden border border-sage-100">
         <InfoRow icon={MapPin} title="Cabinet">
           12 rue des Lilas<br />
           75011 Paris<br />
@@ -364,14 +364,14 @@ function ReservationsSection() {
           <span className="text-ink-soft/60">Sur rendez-vous</span>
         </InfoRow>
         <InfoRow icon={Phone} title="Téléphone">
-          <a href="tel:+33612345678" className="hover:text-sky-600 transition-colors">
+          <a href="tel:+33612345678" className="hover:text-sage-600 transition-colors">
             06 12 34 56 78
           </a>
         </InfoRow>
         <InfoRow icon={Mail} title="Email">
           <a
             href="mailto:contact@yael-massage.fr"
-            className="hover:text-sky-600 transition-colors break-all"
+            className="hover:text-sage-600 transition-colors break-all"
           >
             contact@yael-massage.fr
           </a>
@@ -394,7 +394,7 @@ function InfoRow({
   return (
     <div className="bg-white p-6">
       <div className="flex items-center gap-3 mb-2">
-        <Icon className="w-4 h-4 text-sky-400" strokeWidth={1.5} />
+        <Icon className="w-4 h-4 text-sage-400" strokeWidth={1.5} />
         <h3 className="font-serif text-base text-ink">{title}</h3>
       </div>
       <p className="text-ink-soft text-sm leading-relaxed pl-7">{children}</p>
@@ -405,42 +405,43 @@ function InfoRow({
 function AProposSection() {
   return (
     <SectionShell id="apropos" tone="sage">
-      <div className="grid md:grid-cols-5 gap-8 lg:gap-12 items-start">
-        <div className="md:col-span-3">
-          <h2 className="font-serif text-3xl sm:text-4xl text-ink leading-[1.15]">
-            À propos de moi
-          </h2>
-          <div className="mt-6 space-y-5 text-ink-soft text-base leading-relaxed">
-            <p>
-              Je m'appelle Yaël. Je pratique le massage ayurvédique depuis plus
-              de dix ans, après une formation en Inde auprès de praticiens
-              traditionnels. Ce qui m'a touchée dès le départ, c'est la façon
-              dont ce soin relie le corps et l'esprit, sans jamais les séparer.
-            </p>
-            <p>
-              Mon approche est simple et à l'écoute. Chaque massage s'adapte à
-              la personne reçue, à son état du jour, à ce qui a besoin d'être
-              relâché. Je travaille dans un petit cabinet paisible, à l'abri du
-              bruit, pensé pour qu'on puisse véritablement se déposer.
-            </p>
-            <p>
-              Au-delà du geste, j'aime partager l'esprit de l'Ayurveda : une
-              attention au souffle, une qualité de présence, et la conviction
-              que prendre soin de soi n'est pas un luxe mais une nécessité.
-            </p>
-          </div>
-        </div>
+    <div className="grid md:grid-cols-5 gap-8 lg:gap-12 items-start">
+      <div className="md:col-span-3">
+        <h2 className="font-serif text-primary text-3xl sm:text-4xl text-ink leading-[1.15]">
+          À propos de moi
+        </h2>
 
-        <div className="md:col-span-2">
-          <div className="rounded-2xl overflow-hidden">
-            <img
-              src={yael01}
-              alt="Yaël Marquet, praticien en massage ayurvédique"
-              className="w-full h-72 md:h-80 object-cover"
-            />
-          </div>
+        <div className="mt-6 space-y-5 text-ink-soft text-base leading-relaxed">
+        <p>
+                  Je m'appelle Yaël. Je pratique le massage ayurvédique depuis plus
+                  de dix ans, après une formation en Inde auprès de praticiens
+                  traditionnels. Ce qui m'a touchée dès le départ, c'est la façon
+                  dont ce soin relie le corps et l'esprit, sans jamais les séparer.
+                </p>
+                <p>
+                  Mon approche est simple et à l'écoute. Chaque massage s'adapte à
+                  la personne reçue, à son état du jour, à ce qui a besoin d'être
+                  relâché. Je travaille dans un petit cabinet paisible, à l'abri du
+                  bruit, pensé pour qu'on puisse véritablement se déposer.
+                </p>
+                <p>
+                  Au-delà du geste, j'aime partager l'esprit de l'Ayurveda : une
+                  attention au souffle, une qualité de présence, et la conviction
+                  que prendre soin de soi n'est pas un luxe mais une nécessité.
+                </p>
         </div>
       </div>
+
+      <div className="md:col-span-2 md:pt-12">
+        <div className="rounded-2xl overflow-hidden">
+          <img
+            src={yael01}
+            alt="Yaël Marquet, praticien en massage ayurvédique"
+            className="w-full h-auto"
+          />
+        </div>
+      </div>
+    </div>
     </SectionShell>
   );
 }
@@ -458,7 +459,7 @@ function Footer() {
                 onClick={() =>
                   document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' })
                 }
-                className="hover:text-sky-200 transition-colors"
+                className="hover:text-sage-200 transition-colors"
               >
                 {item.label}
               </button>
