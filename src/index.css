@@ -6,21 +6,12 @@
   --font-serif: 'Cormorant Garamond', ui-serif, Georgia, serif;
 
   /* Palette — vert sauge clair, reste en blanc/crème */
-
-  --color-sage-50: #f4f7f3;
-  --color-sage-100: #e6efe2;
-  --color-sage-200: #cde0c5;
-  --color-sage-300: #aac9a0;
-  --color-sage-400: #84ad7a;
-  --color-sage-500: #64915b;
-
   --color-primary: hsl(171 23% 57%);
   --color-primary-foreground: hsl(60 25% 97%);
   --color-secondary: hsl(108 19% 81%);
   --color-secondary-foreground: hsl(30 9% 21%);
 
   --color-cream: #fbfaf6;
-  --color-sand: #f3efe6;
 
   --color-ink: #2f3a44;
   --color-ink-soft: #5b6873;
@@ -39,6 +30,6 @@ body {
 }
 
 ::selection {
-  background: var(--color-sky-200);
+  background: var(--color-sage-200);
   color: var(--color-ink);
 }
