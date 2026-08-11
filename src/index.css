@@ -5,7 +5,7 @@
   --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
   --font-serif: 'Cormorant Garamond', ui-serif, Georgia, serif;
 
-  /* Palette — vert sauge clair, reste en blanc/crème */
+  /* Palette — vert sauge, reste en blanc/crème */
   --color-primary: hsl(171 23% 57%);
   --color-primary-foreground: hsl(60 25% 97%);
   --color-secondary: hsl(108 19% 81%);
