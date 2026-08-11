@@ -186,30 +186,59 @@ function MassageSection() {
       <h2 className="font-serif text-primary text-3xl sm:text-4xl leading-[1.15] max-w-2xl">
         Le massage ayurvédique
       </h2>
-      <p className="mt-6 text-ink-soft text-base leading-relaxed max-w-2xl">
-        L'Ayurveda.
-        <br />
-        C'est la médecine traditionnelle de l'Inde, une science de la vie qui invite à cultiver l'harmonie entre l'être humain, son corps et le monde qui l'entoure. 
-        Issu d'une tradition ancienne transmise au fil des générations, elle considère la santé comme une harmonie subtile entre le corps, le souffle, le mental, les sens et la conscience.
-        À travers l'alimentation, les plantes médicinales, les massages, le yoga, la respiration, la méditation et l'observation des rythmes de la nature, l'Ayurveda accompagne chacun dans la compréhension de sa constitution et de son propre chemin vers l'équilibre.
-        C'est une invitation à vivre plus consciemment, en accord avec notre nature profonde et les lois du vivant. 
-      </p>
-      <p className="mt-6 text-ink-soft text-base leading-relaxed max-w-2xl">
-        Le massage ayurvédique.
-        <br />
-        Dans la tradition ayurvédique, le massage est un soin ancestral destiné à préserver la santé, soutenir la vitalité et accompagner les forces naturelles d'équilibre de l'organisme.
-        Réalisé avec des huiles végétales et des gestes précis, il favorise une détente profonde, nourrit les tissus, apaise le système nerveux et soutient les capacités naturelles du corps.
-        Chaque massage est une rencontre unique, adaptée à la constitution, au moment de vie et aux besoins de chacun, dans le respect des principes de l'Ayurveda.
-        Recevoir un massage ayurvédique, c'est s'offrir un temps de soin et de présence, où les tensions se relâchent, où le souffle retrouve son rythme et où le corps peut renouer avec sa vitalité.
-      </p>
 
-      <div className="mt-10 rounded-2xl overflow-hidden">
-        <img
-          src="https://images.pexels.com/photos/6628696/pexels-photo-6628696.jpeg?auto=compress&cs=tinysrgb&w=1200"
-          alt="Massage ayurvédique à l'huile chaude"
-          className="w-full h-64 sm:h-80 object-cover"
-        />
+      <div className="mt-6 space-y-16">
+
+        <div className="grid md:grid-cols-5 gap-10 lg:gap-16 items-center">
+          <div className="md:col-span-3">
+            <h3 className="font-serif text-2xl text-ink-soft w-full">
+              L'Ayurveda
+            </h3>
+            <p className="mt-2 text-ink-soft text-base leading-relaxed max-w-2xl">
+              C'est la médecine traditionnelle de l'Inde, une science de la vie qui invite à cultiver l'harmonie entre l'être humain, son corps et le monde qui l'entoure. 
+              Issu d'une tradition ancienne transmise au fil des générations, elle considère la santé comme une harmonie subtile entre le corps, le souffle, le mental, les sens et la conscience.
+              À travers l'alimentation, les plantes médicinales, les massages, le yoga, la respiration, la méditation et l'observation des rythmes de la nature, l'Ayurveda accompagne chacun dans la compréhension de sa constitution et de son propre chemin vers l'équilibre.
+              C'est une invitation à vivre plus consciemment, en accord avec notre nature profonde et les lois du vivant. 
+            </p>
+          </div>
+
+          <div className="md:col-span-2">
+            <div className="rounded-2xl overflow-hidden">
+              <img
+                src="https://images.pexels.com/photos/6628696/pexels-photo-6628696.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Yaël Marquet, praticien en massage ayurvédique"
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-5 gap-10 lg:gap-16 items-center">
+          <div className="md:col-span-2 order-2 md:order-1">
+            <div className="rounded-2xl overflow-hidden">
+              <img
+                src={yael01}
+                alt="Yaël Marquet, praticien en massage ayurvédique"
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+
+          <div className="md:col-span-3 order-1 md:order-2">
+            <h3 className="font-serif text-2xl text-ink-soft w-full">
+              Le massage
+            </h3>
+            <p className="mt-2 text-ink-soft text-base leading-relaxed max-w-2xl">
+              Dans la tradition ayurvédique, le massage est un soin ancestral destiné à préserver la santé, soutenir la vitalité et accompagner les forces naturelles d'équilibre de l'organisme.
+              Réalisé avec des huiles végétales et des gestes précis, il favorise une détente profonde, nourrit les tissus, apaise le système nerveux et soutient les capacités naturelles du corps.
+              Chaque massage est une rencontre unique, adaptée à la constitution, au moment de vie et aux besoins de chacun, dans le respect des principes de l'Ayurveda.
+              Recevoir un massage ayurvédique, c'est s'offrir un temps de soin et de présence, où les tensions se relâchent, où le souffle retrouve son rythme et où le corps peut renouer avec sa vitalité.
+            </p>
+          </div>
+        </div>
+
       </div>
+
     </SectionShell>
   );
 }
@@ -272,13 +301,17 @@ function SoinsSection() {
       <h2 className="font-serif text-primary text-3xl sm:text-4xl leading-[1.15]">
         Soins
       </h2>
-      <p className="mt-6 text-ink-soft text-base leading-relaxed max-w-2xl">
-        Six formules au cabinet selon le temps dont vous disposez et l'intention
-        du moment, plus une option à domicile. Huiles chaudes végétales comprises.
+      <p className="mt-6 text-ink-soft text-base leading-relaxed">
+        Six formules sont possible au cabinet selon le temps dont vous disposez et l'intention
+        du moment.
+      </p>
+      <p className="mt-6 text-ink-soft text-base leading-relaxed">
+        Je me déplace également à votre domicile dans un un rayon d'environ 30 minutes du Mas d'Azil. 
+        Pour les massages à domicile, un seul soin est possible, le massage de 2h.
       </p>
 
       <div className="mt-12">
-        <h3 className="font-serif text-2xl text-ink w-full pb-3 border-b border-primary/30">
+        <h3 className="font-serif text-2xl text-ink-soft w-full pb-3 border-b border-primary/30">
           À mon cabinet
         </h3>
       </div>
@@ -319,7 +352,7 @@ function SoinsSection() {
       </div>
 
       <div className="mt-12">
-        <h3 className="font-serif text-2xl text-ink w-full pb-3 border-b border-primary/30">
+        <h3 className="font-serif text-2xl text-ink-soft w-full pb-3 border-b border-primary/30">
           À domicile
         </h3>
       </div>
@@ -354,9 +387,8 @@ function ReservationsSection() {
       <h2 className="font-serif text-primary text-3xl sm:text-4xl leading-[1.15]">
         Réservations
       </h2>
-      <p className="mt-6 text-ink-soft text-base leading-relaxed max-w-2xl">
-        Pour réserver un rendez-vous, contactez-moi par téléphone ou par email.
-        Je recommande de prévoir une semaine à l'avance.
+      <p className="mt-6 text-ink-soft text-base leading-relaxed">
+        Pour réserver un rendez-vous, vous pouvez directement me contacter par téléphone, SMS ou email.
       </p>
 
       <div className="mt-10 grid sm:grid-cols-2 gap-px bg-primary/30 rounded-2xl overflow-hidden border border-primary/30">
@@ -371,8 +403,8 @@ function ReservationsSection() {
           <span className="text-ink-soft/60">Sur rendez-vous</span>
         </InfoRow>
         <InfoRow icon={Phone} title="Téléphone">
-          <a href="tel:+33612345678" className="hover:text-ink/90 transition-colors">
-            06 12 34 56 78
+          <a href="tel:+336000000000" className="hover:text-ink/90 transition-colors">
+            06 42 93 71 61
           </a>
         </InfoRow>
         <InfoRow icon={Mail} title="Email">
@@ -412,7 +444,7 @@ function InfoRow({
 function AProposSection() {
   return (
     <SectionShell id="apropos" tone="sage">
-    <div className="grid md:grid-cols-5 gap-8 lg:gap-12 items-start">
+    <div className="grid md:grid-cols-5 gap-10 lg:gap-16 items-start">
       <div className="md:col-span-3">
         <h2 className="font-serif text-primary text-3xl sm:text-4xl leading-[1.15]">
           À propos de moi
@@ -439,7 +471,7 @@ function AProposSection() {
         </div>
       </div>
 
-      <div className="md:col-span-2 md:pt-12">
+      <div className="md:col-span-2 md:pt-18">
         <div className="rounded-2xl overflow-hidden">
           <img
             src={yael01}
@@ -455,29 +487,24 @@ function AProposSection() {
 
 function Footer() {
   return (
-    <footer className="bg-ink py-12">
+    <footer className="bg-foreground/95 py-12">
       <div className="max-w-4xl mx-auto px-5 sm:px-8">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6 text-white/70">
-          <span className="font-serif text-base text-white">Yaël Marquet Massage</span>
-          <nav className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm">
-            {NAV.map((item) => (
-              <button
-                key={item.id}
-                onClick={() =>
-                  document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' })
-                }
-                className="hover:text-white transition-colors"
-              >
-                {item.label}
-              </button>
-            ))}
-          </nav>
+          <span className="font-serif text-base text-white/90">Yaël Marquet Massage</span>
+          <div className="flex flex-col items-center md:items-end gap-2 text-sm font-light">
+        <a href="mailto:contact@yael-massage.fr" className="hover:text-white/90 transition-colors flex items-center gap-2">
+          <Mail className="w-4 h-4" /> contact@yael-massage.fr
+        </a>
+        <a href="tel:+33600000000" className="hover:text-white/90 transition-colors flex items-center gap-2">
+          <Phone className="w-4 h-4" /> 06 42 93 71 61
+        </a>
+      </div>
         </div>
-        <div className="mt-8 pt-6 border-t border-white/10 text-center text-xs text-white/40">
+        <div className="mt-6 pt-6 border-t border-white/10 text-center text-xs text-white/40">
           © {new Date().getFullYear()} Yaël Marquet Massage
         </div>
       </div>
-    </footer>
+    </footer>      
   );
 }
 
