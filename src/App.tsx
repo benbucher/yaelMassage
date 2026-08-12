@@ -61,17 +61,17 @@ function Header({ active }: { active: string }) {
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
-        scrolled ? 'bg-cream drop-shadow' : 'bg-transparent'
+        scrolled ? 'bg-cream drop-shadow' : 'bg-cream' // 'bg-transparent'
       }`}
     >
       <div className="max-w-5xl mx-auto px-5 sm:px-8">
         <div className="flex items-center justify-between h-16">
           <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <span
-              className={`font-serif text-xl tracking-wide transition-colors ${
+              className={`font-serif md:text-2xl text-xl tracking-wide transition-colors ${
                 scrolled 
-                  ? 'text-ink-soft/90 hover:text-ink'
-                  : 'text-white/90 hover:text-white'
+                  ? 'text-ink-soft hover:text-ink'
+                  : 'text-ink-soft hover:text-ink' // 'text-white/90 hover:text-white'
               }`}
             >
               Yaël Marquet Massage
@@ -85,13 +85,13 @@ function Header({ active }: { active: string }) {
                 onClick={() => go(item.id)}
                 className={`relative text-xs uppercase tracking-widest transition-colors py-1 ${
                   scrolled
-                    ? 'text-ink-soft/90 hover:text-ink'
-                    : 'text-white/90 hover:text-white'
+                    ? 'text-ink-soft hover:text-ink'
+                    : 'text-ink-soft hover:text-ink' // 'text-white/90 hover:text-white'
                 }`}
               >
                 {item.label}
                 <span
-                  className={`absolute -bottom-0.5 left-0 h-px bg-current transition-all duration-300 ${
+                  className={`absolute -bottom-0.5 left-0 h-[0.5px] bg-current transition-all duration-300 ${
                     active === item.id ? 'w-full opacity-100' : 'w-0 opacity-0'
                   }`}
                 />
@@ -101,7 +101,7 @@ function Header({ active }: { active: string }) {
 
           <button
             className={`md:hidden grid place-items-center w-10 h-10 rounded-full transition-colors ${
-              scrolled ? 'text-ink/90' : 'text-white/90'
+              scrolled ? 'text-ink/90' : 'text-ink/90' // 'text-white/90'
             }`}
             onClick={() => setOpen((v) => !v)}
             aria-label="Menu"
@@ -121,7 +121,7 @@ function Header({ active }: { active: string }) {
             <button
               key={item.id}
               onClick={() => go(item.id)}
-              className={`text-ink-soft/90 text-left px-4 py-3 text-sm uppercase tracking-widest transition-colors
+              className={`text-ink-soft text-left px-4 py-3 text-sm uppercase tracking-widest transition-colors
                 `}
             >
               {item.label}
@@ -142,15 +142,24 @@ function Hero() {
           alt="Porte en bois sculpté, teinte bleue délavée"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-secondary/30 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-b from-secondary/20 via-transparent to-cream/40" />
+        <div className="absolute inset-0 bg-primary/50 mix-blend-multiply" />
+       
+        <div className="absolute inset-0 bg-gradient-to-l from-secondary/20 via-transparent to-cream/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-secondary/20 via-transparent to-cream/60" />
+
+        
+        {/* 
+        <div className="absolute inset-0 bg-gradient-to-b from-secondary/20 via-transparent to-cream/60" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_20%,theme(colors.cream)_100%)]" />
+         */}
+
       </div>
 
       <div className="relative z-10 text-center px-6 max-w-3xl">
         <h1 className="font-serif font-medium text-white text-5xl sm:text-8xl leading-[1.1] tracking-wide opacity-0 animate-[fadeUp_0.9s_0.25s_forwards] drop-shadow-[0_2px_20px_rgba(0,0,0,0.25)]">
           Yaël Marquet
         </h1>
-        <p className="mt-5 text-white/90 text-base uppercase sm:text-2xl font-light tracking-widest max-w-xl mx-auto leading-relaxed opacity-0 animate-[fadeUp_0.9s_0.4s_forwards] drop-shadow-[0_1px_12px_rgba(0,0,0,0.3)]">
+        <p className="mt-5 text-white text-base uppercase sm:text-2xl font-light tracking-widest max-w-xl mx-auto leading-relaxed opacity-0 animate-[fadeUp_0.9s_0.4s_forwards] drop-shadow-[0_1px_12px_rgba(0,0,0,0.3)]">
           Praticien Massage Ayurvédique
         </p>
       </div>
@@ -399,10 +408,10 @@ function ReservationsSection() {
         </InfoRow>
         <InfoRow icon={Mail} title="Email">
           <a
-            href="mailto:contact@yael-massage.fr"
+            href="mailto:tattvaya@gmail.com"
             className="hover:text-ink/90 transition-colors break-all"
           >
-            contact@yael-massage.fr
+            tattvaya@gmail.com
           </a>
         </InfoRow>
         <InfoRow icon={MapPin} title="Cabinet">
@@ -492,8 +501,8 @@ function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6 text-white/70">
           <span className="font-serif text-base text-white/90">Yaël Marquet Massage</span>
           <div className="flex flex-col items-center md:items-end gap-2 text-sm font-light">
-        <a href="mailto:contact@yael-massage.fr" className="hover:text-white/90 transition-colors flex items-center gap-2">
-          <Mail className="w-4 h-4" /> contact@yael-massage.fr
+        <a href="mailto:tattvaya@gmail.com" className="hover:text-white/90 transition-colors flex items-center gap-2">
+          <Mail className="w-4 h-4" /> tattvaya@gmail.com
         </a>
         <a href="tel:+33600000000" className="hover:text-white/90 transition-colors flex items-center gap-2">
           <Phone className="w-4 h-4" /> 06 42 93 71 61
