@@ -392,16 +392,6 @@ function ReservationsSection() {
       </p>
 
       <div className="mt-10 grid sm:grid-cols-2 gap-px bg-primary/30 rounded-2xl overflow-hidden border border-primary/30">
-        <InfoRow icon={MapPin} title="Cabinet">
-          12 rue des Lilas<br />
-          75011 Paris<br />
-          <span className="text-ink-soft/60">Métro Père Lachaire</span>
-        </InfoRow>
-        <InfoRow icon={Clock} title="Horaires">
-          Du lundi au samedi<br />
-          9h30 — 19h30<br />
-          <span className="text-ink-soft/60">Sur rendez-vous</span>
-        </InfoRow>
         <InfoRow icon={Phone} title="Téléphone">
           <a href="tel:+336000000000" className="hover:text-ink/90 transition-colors">
             06 42 93 71 61
@@ -414,6 +404,16 @@ function ReservationsSection() {
           >
             contact@yael-massage.fr
           </a>
+        </InfoRow>
+        <InfoRow icon={MapPin} title="Cabinet">
+          12 rue des Lilas<br />
+          75011 Paris<br />
+          <span className="text-ink-soft/60">Métro Père Lachaire</span>
+        </InfoRow>
+        <InfoRow icon={Clock} title="Horaires">
+          Du lundi au samedi<br />
+          9h30 — 19h30<br />
+          <span className="text-ink-soft/60">Sur rendez-vous</span>
         </InfoRow>
       </div>
 
