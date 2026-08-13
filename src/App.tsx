@@ -148,9 +148,8 @@ function Hero() {
         />
         <div className="absolute inset-0 bg-primary/50 mix-blend-multiply" />
        
-        <div className="absolute inset-0 bg-gradient-to-l from-secondary/20 via-transparent to-cream/60" />
-        <div className="absolute inset-0 bg-gradient-to-r from-secondary/20 via-transparent to-cream/60" />
-
+        <div className="absolute inset-0 bg-gradient-to-l from-secondary/20 via-transparent sm:via-70% via-85% to-cream/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-secondary/20 via-transparent sm:via-70% via-85% to-cream/60" />
         
         {/* 
         <div className="absolute inset-0 bg-gradient-to-b from-secondary/20 via-transparent to-cream/60" />
@@ -451,7 +450,7 @@ function ReservationsSection() {
 
       <div className="mt-10 grid sm:grid-cols-2 gap-px bg-primary/30 rounded-2xl overflow-hidden border border-primary/30">
         <InfoRow icon={Phone} title="Téléphone">
-          <a href="tel:+336000000000" className="hover:text-ink/90 transition-colors">
+          <a href="tel:+33642937161" className="hover:text-ink/90 transition-colors">
             06 42 93 71 61
           </a>
         </InfoRow>
@@ -464,9 +463,17 @@ function ReservationsSection() {
           </a>
         </InfoRow>
         <InfoRow icon={MapPin} title="Cabinet">
-          12 rue des Lilas<br />
-          75011 Paris<br />
-          <span className="text-ink-soft/60">Métro Père Lachaire</span>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=12+rue+des+Lilas,+75011+Paris"
+            className="hover:text-ink/90 transition-colors"
+          >
+            12 rue des Lilas<br />
+            75011 Paris
+          </a>
+          <br />
+          <span className="text-ink-soft/60">
+            Sortie 18
+          </span>
         </InfoRow>
         <InfoRow icon={Clock} title="Horaires">
           Du lundi au samedi<br />
@@ -553,7 +560,7 @@ function Footer() {
         <a href="mailto:tattvaya@gmail.com" className="hover:text-white/90 transition-colors flex items-center gap-2">
           <Mail className="w-4 h-4" /> tattvaya@gmail.com
         </a>
-        <a href="tel:+33600000000" className="hover:text-white/90 transition-colors flex items-center gap-2">
+        <a href="tel:+33642937161" className="hover:text-white/90 transition-colors flex items-center gap-2">
           <Phone className="w-4 h-4" /> 06 42 93 71 61
         </a>
       </div>
