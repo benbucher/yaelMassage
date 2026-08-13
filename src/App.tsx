@@ -267,10 +267,12 @@ function SoinsSection() {
     },
     {
       name: 'Marmathérapie',
-      duration: '1h30 | 2h',
-      price: '65 € | 70 €',
+      duration: '1h30',
+      price: '65 €',
       desc: 'Abyanga et acupression (stimulation des points énergétiques)',
       featured: true,
+      durationLong: '2h',
+      priceLong: '80 €',
     },
     {
       name: 'Udvartana',
@@ -285,6 +287,8 @@ function SoinsSection() {
       price: '55 €',
       desc: 'Drainage lymphatique (purifiant et amaincissant)',
       featured: false,
+      durationLong: '2h',
+      priceLong: '75 €',
     },
     {
       name: 'Thandabyanga',
@@ -347,16 +351,57 @@ function SoinsSection() {
             <h4 className="font-serif text-2xl text-ink leading-snug">
               {t.name}
             </h4>
-            <p className="mt-2 flex items-center justify-center text-xs uppercase tracking-wider text-primary font-medium">
-              <Clock
-                className="inline-block w-4 h-4 mr-1.5 text-primary"
-                strokeWidth={1.5}
-              />
-              {t.duration}
-            </p>
-            <p className="mt-2 font-sans font-light text-3xl text-ink">
-              {t.price}
-            </p>
+
+            {t.durationLong && t.priceLong ? (
+            <div className="mt-3 flex items-stretch justify-center">
+              
+              {/* Short option */}
+              <div className="flex-1 pr-6 text-right">
+                <p className="flex items-center justify-end text-xs uppercase tracking-wider text-primary font-medium">
+                  <Clock
+                    className="w-4 h-4 mr-1.5 text-primary"
+                    strokeWidth={1.5}
+                  />
+                  {t.duration}
+                </p>
+                <p className="mt-2 font-sans font-light text-3xl text-ink">
+                  {t.price}
+                </p>
+              </div>
+
+              {/* Vertical separator */}
+              <div className="w-px bg-primary/30" />
+
+              {/* Long option */}
+              <div className="flex-1 pl-6 text-left">
+                <p className="flex items-center text-xs uppercase tracking-wider text-primary font-medium">
+                  <Clock
+                    className="w-4 h-4 mr-1.5 text-primary"
+                    strokeWidth={1.5}
+                  />
+                  {t.durationLong}
+                </p>
+                <p className="mt-2 font-sans font-light text-3xl text-ink">
+                  {t.priceLong}
+                </p>
+              </div>
+
+            </div>
+          ) : (
+            <>
+              {/* Normal single option */}
+              <p className="mt-2 flex items-center justify-center text-xs uppercase tracking-wider text-primary font-medium">
+                <Clock
+                  className="w-4 h-4 mr-1.5 text-primary"
+                  strokeWidth={1.5}
+                />
+                {t.duration}
+              </p>
+              <p className="mt-2 font-sans font-light text-3xl text-ink">
+                {t.price}
+              </p>
+            </>
+          )}
             <p className="mt-2 text-ink-soft text-sm leading-relaxed min-h-[3.5rem]">
               {t.desc}
             </p>
