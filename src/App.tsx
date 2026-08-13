@@ -259,54 +259,54 @@ function MassageSection() {
 function SoinsSection() {
   const cabinet = [
     {
-      name: 'Massage découverte',
-      duration: '1 h',
-      price: '40 €',
-      desc: 'Une première approche ciblée sur une zone de tension.',
+      name: 'Abyanga',
+      duration: '1h30',
+      price: '65 €',
+      desc: 'Massage du corps entier avec des huiles médicinales',
       featured: false,
     },
     {
-      name: 'Massage dos & tête',
-      duration: '1 h',
-      price: '55 €',
-      desc: 'Un soin ciblé sur le dos, les épaules et le cuir chevelu.',
-      featured: false,
-    },
-    {
-      name: 'Massage ayurvédique',
-      duration: '1 h',
-      price: '70 €',
-      desc: 'Le soin complet, de la tête aux pieds.',
-      featured: false,
-    },
-    {
-      name: 'Massage approfondi',
-      duration: '1 h',
-      price: '95 €',
-      desc: 'Le massage intégral avec un temps prolongé sur les zones de tension.',
+      name: 'Marmathérapie',
+      duration: '1h30 | 2h',
+      price: '65 € | 70 €',
+      desc: 'Abyanga et acupression (stimulation des points énergétiques)',
       featured: true,
     },
     {
-      name: 'Massage énergétique',
-      duration: '1 h',
-      price: '75 €',
-      desc: 'Axé sur les points marmas pour rééquilibrer l\'énergie vitale.',
+      name: 'Udvartana',
+      duration: '1h30',
+      price: '65 €',
+      desc: 'Massage tonique à la farine de pois chiche et aux poudres de plantes',
       featured: false,
     },
     {
-      name: 'Massage détente absolue',
-      duration: '2 h',
-      price: '120 €',
-      desc: 'Le soin le plus complet, un véritable voyage sensoriel.',
+      name: 'Neerabyanga',
+      duration: '1h',
+      price: '55 €',
+      desc: 'Drainage lymphatique (purifiant et amaincissant)',
+      featured: false,
+    },
+    {
+      name: 'Thandabyanga',
+      duration: '1h15',
+      price: '60 €',
+      desc: 'Massage du dos',
+      featured: false,
+    },
+    {
+      name: 'Padabyanga',
+      duration: '30 min',
+      price: '35 €',
+      desc: 'Massage des pieds (réflexologie)',
       featured: false,
     },
   ];
 
   const domicile = {
-    name: 'Massage à domicile',
-    duration: '2 h',
-    price: '110 €',
-    desc: 'Le soin complet ayurvédique, pratiqué chez vous, dans votre cocon. Paris et proche banlieue, déplacement inclus.',
+    name: 'Marmathérapie',
+    duration: '2h',
+    price: '90 €',
+    desc: 'Massage du corps entier avec des huiles médicinales et stimulation des points énergétiques',
   };
 
   return (
@@ -319,8 +319,8 @@ function SoinsSection() {
         du moment.
       </p>
       <p className="mt-6 text-ink-soft text-base leading-relaxed">
-        Je me déplace également à votre domicile dans un un rayon d'environ 30 minutes du Mas d'Azil. 
-        Pour les massages à domicile, un seul soin est possible, le massage de 2h.
+        Pour le massage Marmathérapie de 2h, je peux également me déplacer à domicile.
+        Je me déplace à votre domicile dans un un rayon d'environ 30 minutes autour du Mas d'Azil. 
       </p>
 
       <div className="mt-12">
