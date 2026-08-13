@@ -19,7 +19,7 @@ const HERO_IMAGE = heroImage02;
 
 const NAV = [
   { id: 'massage', label: 'Massage' },
-  { id: 'soins', label: 'Soins' },
+  { id: 'tarifs', label: 'Tarifs' },
   { id: 'reservations', label: 'Réservations' },
   { id: 'apropos', label: 'À propos' },
 ];
@@ -278,14 +278,14 @@ function SoinsSection() {
       name: 'Udvartana',
       duration: '1h30',
       price: '65 €',
-      desc: 'Massage tonique à la farine de pois chiche et aux poudres de plantes',
+      desc: 'Massage tonique à la farine de pois\u00A0chiche et aux poudres de plantes',
       featured: false,
     },
     {
       name: 'Neerabyanga',
       duration: '1h',
       price: '55 €',
-      desc: 'Drainage lymphatique (purifiant et amaincissant)',
+      desc: 'Drainage lymphatique\n(purifiant et amaincissant)',
       featured: false,
       durationLong: '2h',
       priceLong: '75 €',
@@ -314,17 +314,16 @@ function SoinsSection() {
   };
 
   return (
-    <SectionShell id="soins" tone="sage">
+    <SectionShell id="tarifs" tone="sage">
       <h2 className="font-serif text-primary text-3xl sm:text-4xl leading-[1.15]">
-        Soins
+        Tarifs
       </h2>
       <p className="mt-6 text-ink-soft text-base leading-relaxed">
-        Six formules sont possible au cabinet selon le temps dont vous disposez et l'intention
+        Six massages différents sont possibles au cabinet selon le temps dont vous disposez et l'intention
         du moment.
       </p>
       <p className="mt-6 text-ink-soft text-base leading-relaxed">
-        Pour le massage Marmathérapie de 2h, je peux également me déplacer à domicile.
-        Je me déplace à votre domicile dans un un rayon d'environ 30 minutes autour du Mas d'Azil. 
+        Pour le massage Marmathérapie de 2h, je peux également me déplacer à domicile dans un rayon d'environ 30 minutes autour du Mas d'Azil. 
       </p>
 
       <div className="mt-12">
@@ -357,7 +356,7 @@ function SoinsSection() {
               
               {/* Short option */}
               <div className="flex-1 pr-6 text-right">
-                <p className="flex items-center justify-end text-xs uppercase tracking-wider text-primary font-medium">
+                <p className="flex items-center justify-end text-sm uppercase tracking-wider text-primary font-medium">
                   <Clock
                     className="w-4 h-4 mr-1.5 text-primary"
                     strokeWidth={1.5}
@@ -374,7 +373,7 @@ function SoinsSection() {
 
               {/* Long option */}
               <div className="flex-1 pl-6 text-left">
-                <p className="flex items-center text-xs uppercase tracking-wider text-primary font-medium">
+                <p className="flex items-center text-sm uppercase tracking-wider text-primary font-medium">
                   <Clock
                     className="w-4 h-4 mr-1.5 text-primary"
                     strokeWidth={1.5}
@@ -390,7 +389,7 @@ function SoinsSection() {
           ) : (
             <>
               {/* Normal single option */}
-              <p className="mt-2 flex items-center justify-center text-xs uppercase tracking-wider text-primary font-medium">
+              <p className="mt-2 flex items-center justify-center text-sm uppercase tracking-wider text-primary font-medium">
                 <Clock
                   className="w-4 h-4 mr-1.5 text-primary"
                   strokeWidth={1.5}
@@ -402,7 +401,7 @@ function SoinsSection() {
               </p>
             </>
           )}
-            <p className="mt-2 text-ink-soft text-sm leading-relaxed min-h-[3.5rem]">
+            <p className="mt-2 text-ink-soft text-sm leading-relaxed min-h-[3.5rem] whitespace-pre-line">
               {t.desc}
             </p>
           </div>
@@ -420,7 +419,7 @@ function SoinsSection() {
           <h4 className="font-serif text-2xl text-ink leading-snug"> 
             {domicile.name}
           </h4>
-          <p className="mt-2 flex items-center justify-center text-xs uppercase tracking-wider text-primary font-medium">
+          <p className="mt-2 flex items-center justify-center text-sm uppercase tracking-wider text-primary font-medium">
             <Clock
               className="w-4 h-4 mr-1.5 text-primary"
               strokeWidth={1.5}
@@ -430,7 +429,7 @@ function SoinsSection() {
           <p className="mt-2 font-sans font-light text-3xl text-ink">
             {domicile.price}
           </p>
-          <p className="mt-2 text-ink-soft text-sm leading-relaxed">
+          <p className="mt-2 text-ink-soft text-sm leading-relaxed whitespace-pre-line">
             {domicile.desc}
           </p>
         </div>
