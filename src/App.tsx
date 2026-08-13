@@ -9,6 +9,10 @@ import {
 } from 'lucide-react';
 import heroImage from './pictures/hero-door.jpg';
 import yael01 from './pictures/yael01.jpg';
+import yael02 from './pictures/yael02.jpg';
+import massage01 from './pictures/massage01.jpg';
+import massage02 from './pictures/massage02.jpg';
+import massage03 from './pictures/massage03.jpg';
 
 const HERO_IMAGE = heroImage;
 
@@ -214,8 +218,8 @@ function MassageSection() {
           <div className="md:col-span-2">
             <div className="rounded-2xl overflow-hidden">
               <img
-                src="https://images.pexels.com/photos/6628696/pexels-photo-6628696.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                alt="Yaël Marquet, praticien en massage ayurvédique"
+                src={massage02}
+                alt="Massage"
                 className="w-full h-auto"
               />
             </div>
@@ -226,8 +230,8 @@ function MassageSection() {
           <div className="md:col-span-2 order-2 md:order-1">
             <div className="rounded-2xl overflow-hidden">
               <img
-                src={yael01}
-                alt="Yaël Marquet, praticien en massage ayurvédique"
+                src={massage03}
+                alt="Massage"
                 className="w-full h-auto"
               />
             </div>
@@ -235,7 +239,7 @@ function MassageSection() {
 
           <div className="md:col-span-3 order-1 md:order-2">
             <h3 className="font-serif text-2xl text-ink-soft w-full">
-              Le massage
+              Ma pratique
             </h3>
             <p className="mt-2 text-ink-soft text-base leading-relaxed max-w-2xl">
               Dans la tradition ayurvédique, le massage est un soin ancestral destiné à préserver la santé, soutenir la vitalité et accompagner les forces naturelles d'équilibre de l'organisme.
@@ -483,7 +487,7 @@ function AProposSection() {
       <div className="md:col-span-2 md:pt-18">
         <div className="rounded-2xl overflow-hidden">
           <img
-            src={yael01}
+            src={yael02}
             alt="Yaël Marquet, praticien en massage ayurvédique"
             className="w-full h-auto"
           />
