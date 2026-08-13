@@ -7,14 +7,15 @@ import {
   Menu,
   X,
 } from 'lucide-react';
-import heroImage from './pictures/hero-door.jpg';
+import heroImage01 from './pictures/hero-door.jpg';
+import heroImage02 from './pictures/hero-door-2.jpg';
 import yael01 from './pictures/yael01.jpg';
 import yael02 from './pictures/yael02.jpg';
 import massage01 from './pictures/massage01.jpg';
 import massage02 from './pictures/massage02.jpg';
 import massage03 from './pictures/massage03.jpg';
 
-const HERO_IMAGE = heroImage;
+const HERO_IMAGE = heroImage02;
 
 const NAV = [
   { id: 'massage', label: 'Massage' },
