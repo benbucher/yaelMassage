@@ -464,17 +464,8 @@ function ReservationsSection() {
           </a>
         </InfoRow>
         <InfoRow icon={MapPin} title="Cabinet">
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=12+rue+des+Lilas,+75011+Paris"
-            className="hover:text-ink/90 transition-colors"
-          >
-            12 rue des Lilas<br />
-            75011 Paris
-          </a>
-          <br />
-          <span className="text-ink-soft/60">
-            Sortie 18
-          </span>
+          2 Grande Route<br />
+          09290 Le Mas d'Azil
         </InfoRow>
         <InfoRow icon={Clock} title="Horaires">
           Du lundi au samedi<br />
@@ -518,21 +509,34 @@ function AProposSection() {
 
         <div className="mt-6 space-y-5 text-ink-soft text-base leading-relaxed">
           <p>
-            Je m'appelle Yaël. Je pratique le massage ayurvédique depuis plus
-            de dix ans, après une formation en Inde auprès de praticiens
-            traditionnels. Ce qui m'a touchée dès le départ, c'est la façon
-            dont ce soin relie le corps et l'esprit, sans jamais les séparer.
+            Je n'ai pas découvert l'Ayurveda par hasard.
+            Depuis toujours, je suis curieux de ce qui touche à l'être humain : comprendre le corps, l'esprit, ce qui nous équilibre et nous fragilise.
           </p>
           <p>
-            Mon approche est simple et à l'écoute. Chaque massage s'adapte à
-            la personne reçue, à son état du jour, à ce qui a besoin d'être
-            relâché. Je travaille dans un petit cabinet paisible, à l'abri du
-            bruit, pensé pour qu'on puisse véritablement se déposer.
+            Puis la vie m'a amené à une expérience plus concrète.
+            Après avoir exercé un métier physiquement exigeant plusieurs années, j'avais régulièrement mal au dos. C'est à cette période que j'ai découvert l'Ayurveda, à travers un massage.
+            Je me souviens surtout d'une chose : au-delà de la détente physique, j'ai ressenti quelque chose de plus profond. Une approche qui ne cherchait pas simplement à faire disparaître un symptôme, mais à comprendre l'être humain dans sa globalité. Une autre manière de prendre soin de soi devenait possible.
           </p>
           <p>
-            Au-delà du geste, j'aime partager l'esprit de l'Ayurveda : une
-            attention au souffle, une qualité de présence, et la conviction
-            que prendre soin de soi n'est pas un luxe mais une nécessité.
+            Cette découverte a été un véritable déclic. J'ai décidé de me former à mon tour, avec l'envie de comprendre cette approche en profondeur et, un jour, de pouvoir la transmettre.
+          </p>
+          <p>
+            Parce qu'accompagner quelqu'un demande plus que de l'intuition, j'ai consacré trois années à une formation approfondie, auprès d'écoles et d'enseignants reconnus :
+          </p>
+          <ul className="list-disc pl-5 space-y-2">
+            <li>Institut Européen d'Études Védiques (IEEV) — Fondamentaux de l'Ayurveda et soins traditionnels</li>
+            <li>Alex Duncan et Dr David Frawley — Alimentation, plantes et santé globale</li>
+            <li>Kandeepan Jothishmayananda — Perfectionnement aux massages et protocoles avancés (SAP)</li>
+          </ul>
+          <p>
+            Aujourd'hui, cela fait depuis 16 ans, je vous accueille simplement. De l'écoute, de l'échange, et une adaptation à vos besoins du moment.
+          </p>
+          <p>
+            Avec sérieux dans ma pratique, mais aussi avec simplicité et bonne humeur, mon intention reste la même depuis mes débuts : 
+            vous proposer un massage sur-mesure, efficace et profondément ressourçant. Et peut-être vous permettre, le temps d'une séance, de retrouver un peu plus d'espace, de légèreté et d'énergie.
+          </p>
+          <p>
+            Au plaisir de vous accompagner sur ce chemin vers un mieux-être durable.
           </p>
         </div>
       </div>
