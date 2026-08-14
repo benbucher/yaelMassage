@@ -528,7 +528,7 @@ function AProposSection() {
             <li>Kandeepan Jothishmayananda — Perfectionnement aux massages et protocoles avancés (SAP)</li>
           </ul>
           <p>
-            Aujourd'hui, cela fait depuis 16 ans, je vous accueille simplement. De l'écoute, de l'échange, et une adaptation à vos besoins du moment.
+            Aujourd'hui, cela fait depuis 16 ans que je vous accueille simplement. De l'écoute, de l'échange, et une adaptation à vos besoins du moment.
           </p>
           <p>
             Avec sérieux dans ma pratique, mais aussi avec simplicité et bonne humeur, mon intention reste la même depuis mes débuts : 
