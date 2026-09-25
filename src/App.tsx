@@ -164,7 +164,7 @@ function Hero() {
           Yaël Marquet
         </h1>
         <p className="mt-5 text-white text-base uppercase sm:text-2xl font-light tracking-widest max-w-xl mx-auto leading-relaxed opacity-0 animate-[fadeUp_0.9s_0.4s_forwards] drop-shadow-[0_1px_12px_rgba(0,0,0,0.3)]">
-          Praticien Massage Ayurvédique
+          Praticien Massage Ayurvédique :)
         </p>
       </div>
 
