@@ -323,7 +323,7 @@ function SoinsSection() {
         du moment.
       </p>
       <p className="mt-6 text-ink-soft text-base leading-relaxed">
-        Pour le massage Marmathérapie de 2h, je peux également me déplacer à domicile dans un rayon d'environ 30 minutes autour du Mas d'Azil. 
+        Pour le massage Marmathérapie de 2h, je peux également me déplacer à domicile dans un rayon d'environ 30 minutes autour du Mas-d'Azil. 
       </p>
 
       <div className="mt-12">
@@ -464,7 +464,7 @@ function ReservationsSection() {
         </InfoRow>
         <InfoRow icon={MapPin} title="Cabinet">
           2 Grande Route<br />
-          09290 Le Mas d'Azil
+          09290 Le Mas-d'Azil
         </InfoRow>
         <InfoRow icon={Clock} title="Horaires">
           Du lundi au samedi<br />

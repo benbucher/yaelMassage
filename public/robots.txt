@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://massage-ayurvédique-yaël.fr/sitemap.xml
